@@ -8,22 +8,28 @@ parameter appointment Appointment
 parameter Coverage Coverage
 
 define "Age":
-    AgeInYears()
+  AgeInYears()
 
 define RULE_APPLIES:
   true
 
 define PRIORAUTH_REQUIRED:
-  true
+  false 
 
 define DOCUMENTATION_REQUIRED:
   true
 
-define APPROVE_PRIORAUTH:
-  Age<70
-
 define RESULT_InfoLink:
-    'https://ExampleUMVendor.com/link/'
+  'https://ExampleUMVendor.com/link/'
+
+define RESULT_QuestionnaireOrderUri:
+  'Questionnaire/HomeBloodGlucoseMonitorOrder'
+
+define RESULT_QuestionnaireLabUri:
+  'Questionnaire/HomeBloodGlucoseMonitorLab'
+
+define RESULT_QuestionnaireFaceToFaceUri:
+  'Questionnaire/HomeBloodGlucoseMonitorFaceToFace'  
 
 define RESULT_requestId:
   device_request

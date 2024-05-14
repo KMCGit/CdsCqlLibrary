@@ -7,23 +7,23 @@ parameter device_request DeviceRequest
 parameter appointment Appointment
 parameter Coverage Coverage
 
-define "Age":
-    AgeInYears()
-
 define RULE_APPLIES:
   true
 
 define PRIORAUTH_REQUIRED:
-  true
+  false
 
 define DOCUMENTATION_REQUIRED:
   true
 
-define APPROVE_PRIORAUTH:
-  Age<70
-
 define RESULT_InfoLink:
-    'https://ExampleUMVendor.com/link/'
+  'https://ExampleUMVendor.com/link/'
+  
+define RESULT_QuestionnaireOrderUri:
+  'Questionnaire/PositiveAirwayPressureDevices'
+
+define RESULT_QuestionnaireFaceToFaceUri:
+  'Questionnaire/PositiveAirwayPressureDevicesFaceToFace'
 
 define RESULT_requestId:
   device_request

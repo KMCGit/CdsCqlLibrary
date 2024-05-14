@@ -8,22 +8,31 @@ parameter appointment Appointment
 parameter Coverage Coverage
 
 define "Age":
-    AgeInYears()
+  AgeInYears()
 
 define RULE_APPLIES:
   true
 
 define PRIORAUTH_REQUIRED:
-  false
+  false 
 
 define DOCUMENTATION_REQUIRED:
   false
 
 define APPROVE_PRIORAUTH:
-  Age<70
+  "Age" >= 70
 
 define RESULT_InfoLink:
-    'https://ExampleUMVendor.com/link/'
+  'https://ExampleUMVendor.com/link/'
+
+define RESULT_QuestionnaireOrderUri:
+  'Questionnaire/OnyxHomeHealthServices'
+
+define RESULT_QuestionnairePlanOfCareUri:
+  'Questionnaire/OnyxHomeHealthServicesPlanOfCare'
+  
+define RESULT_QuestionnaireFaceToFaceUri:
+  'Questionnaire/OnyxHomeHealthServicesFaceToFace'
 
 define RESULT_requestId:
   service_request

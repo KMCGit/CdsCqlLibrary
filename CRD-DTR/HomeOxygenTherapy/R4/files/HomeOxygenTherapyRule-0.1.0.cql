@@ -8,22 +8,31 @@ parameter appointment Appointment
 parameter Coverage Coverage
 
 define "Age":
-    AgeInYears()
+  AgeInYears()
 
 define RULE_APPLIES:
-  true
+  "Age" > 0 and Coverage.class.value = 'Medicare Part A'
 
 define PRIORAUTH_REQUIRED:
-  true
+  false 
 
 define DOCUMENTATION_REQUIRED:
   true
 
-define APPROVE_PRIORAUTH:
-  Age<70
+define RESULT_QuestionnaireOrderUri:
+  'Questionnaire/HomeOxygenTherapy'
+
+define RESULT_QuestionnaireFaceToFaceUri:
+  'Questionnaire/HomeOxygenTherapyFaceToFace'
+
+define RESULT_QuestionnaireLabUri:
+  'Questionnaire/HomeOxygenTherapyLab'
+
+define RESULT_QuestionnaireAdditionalUri:
+  'Questionnaire/HomeOxygenTherapyAdditional'
 
 define RESULT_InfoLink:
-    'https://ExampleUMVendor.com/link/'
+  'https://ExampleUMVendor.com/link/'
 
 define RESULT_requestId:
   device_request

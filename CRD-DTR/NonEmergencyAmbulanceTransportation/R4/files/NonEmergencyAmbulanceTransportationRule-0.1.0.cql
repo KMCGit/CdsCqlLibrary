@@ -7,23 +7,27 @@ parameter service_request ServiceRequest
 parameter appointment Appointment
 parameter Coverage Coverage
 
-define "Age":
-    AgeInYears()
-
 define RULE_APPLIES:
   true
 
 define PRIORAUTH_REQUIRED:
-  true
+  true 
 
 define DOCUMENTATION_REQUIRED:
   true
 
-define APPROVE_PRIORAUTH:
-  Age<70
-
 define RESULT_InfoLink:
-    'https://ExampleUMVendor.com/link/'
+  'https://ExampleUMVendor.com/link/'
+  
+// TODO - need to define the questionnaire in next story
+define RESULT_QuestionnaireOrderUri:
+  'Questionnaire/NonEmergencyAmbulanceTransportation'
+
+define RESULT_QuestionnairePARequestUri:
+  'Questionnaire/NonEmergencyAmbulanceTransportationPARequest'
+
+define RESULT_QuestionnaireProgressNoteUri:
+  'Questionnaire/NonEmergencyAmbulanceTransportationProgressNote'
 
 define RESULT_requestId:
   service_request

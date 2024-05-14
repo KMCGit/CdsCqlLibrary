@@ -25,6 +25,9 @@ define APPROVE_PRIORAUTH:
 define RESULT_InfoLink:
     'https://ExampleUMVendor.com/link/'
 
+define RESULT_QuestionnaireOrderUri:
+  'Questionnaire/NuclearStressTest'
+
 define RESULT_requestId:
   service_request
 

@@ -9,7 +9,7 @@ parameter medication_dispense MedicationDispense
 parameter medication_statement MedicationStatement
 
 define RULE_APPLIES:
-    true
+  true
 
 define PRIORAUTH_REQUIRED:
   false
@@ -18,16 +18,16 @@ define DOCUMENTATION_REQUIRED:
   true
 
 define RESULT_InfoLink:
-    'https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/Downloads/ProviderComplianceTipsforHospitalBedsandAccessories-ICN909476.pdf'
+  'https://ExampleUMVendor.com/link/'
 
 define RESULT_QuestionnaireOrderUri:
-    'Questionnaire/ImmunosuppressiveDrugs'  
+  'Questionnaire/ImmunosuppressiveDrugs'  
 
 define RESULT_QuestionnaireDispenseUri:
-    'Questionnaire/ImmunosuppressiveDrugs'  
+  'Questionnaire/ImmunosuppressiveDrugs'  
 
 define RESULT_QuestionnaireProgressNoteUri:
-    'Questionnaire/ImmunosuppressiveDrugsProgressNote'
+  'Questionnaire/ImmunosuppressiveDrugsProgressNote'
 
 define RESULT_requestId:
   medication_request
