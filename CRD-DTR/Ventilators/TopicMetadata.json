@@ -1,0 +1,15 @@
+{
+  "topic": "Ventilators",
+  "payers": ["cms", "sc", "onyx"],
+  "mappings": [
+    {
+      "codeSystem": "hcpcs",
+      "codes": ["E0465", "E0466"]
+    },
+    {
+      "codeSystem": "epichcpcs",
+      "codes": ["E0465", "E0466"]
+    }
+  ],
+  "fhirVersions": ["STU3", "R4"]
+}

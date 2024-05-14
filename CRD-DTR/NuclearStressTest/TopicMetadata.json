@@ -1,0 +1,19 @@
+{
+  "topic": "NuclearStressTest",
+  "payers": ["cms", "sc", "onyx"],
+  "mappings": [
+    {
+      "codeSystem": "hcpcs",
+      "codes": ["E9999", "349199", "E9998"]
+    },
+    {
+      "codeSystem": "epichcpcs",
+      "codes": ["E9999", "349199", "E9998"]
+    },
+    {
+      "codeSystem": "cpt",
+      "codes": ["78483"]
+    }
+  ],
+  "fhirVersions": ["R4"]
+}

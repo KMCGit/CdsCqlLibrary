@@ -1,0 +1,15 @@
+{
+  "topic": "HospitalBedsAndAccessories",
+  "payers": ["cms", "sc", "onyx"],
+  "mappings": [
+    {
+      "codeSystem": "hcpcs",
+      "codes": ["E02500", "E02510"]
+    },
+    {
+      "codeSystem": "epichcpcs",
+      "codes": ["E02500", "E02510"]
+    }
+  ],
+  "fhirVersions": ["R4"]
+}

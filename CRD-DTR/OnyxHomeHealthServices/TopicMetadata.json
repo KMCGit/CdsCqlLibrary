@@ -1,0 +1,15 @@
+{
+  "topic": "OnyxHomeHealthServices",
+  "payers": ["cms", "sc", "onyx"],
+  "mappings": [
+    {
+      "codeSystem": "hcpcs",
+      "codes": ["G0179", "G0180", "G0155"]
+    },
+    {
+      "codeSystem": "epichcpcs",
+      "codes": ["G0179", "G0180", "G0155"]
+    }
+  ],
+  "fhirVersions": ["R4"]
+}
