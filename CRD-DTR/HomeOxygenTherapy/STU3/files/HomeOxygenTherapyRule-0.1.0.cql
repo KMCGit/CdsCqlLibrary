@@ -9,7 +9,7 @@ define "Age":
   AgeInYears()
 
 define RULE_APPLIES:
-  "Age" > 0
+  true
 
 define PRIORAUTH_REQUIRED:
   true 
