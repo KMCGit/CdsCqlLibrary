@@ -11,13 +11,16 @@ define "Age":
   AgeInYears()
 
 define RULE_APPLIES:
-  "Age" > 0 and Coverage.class.value = 'Medicare Part A'
-
+ true 
+  
 define PRIORAUTH_REQUIRED:
-  false 
+  true 
 
 define DOCUMENTATION_REQUIRED:
   true
+
+define APPROVE_PRIORAUTH:
+  Age<100
 
 define RESULT_QuestionnaireOrderUri:
   'Questionnaire/HomeOxygenTherapy'
